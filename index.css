@@ -1,0 +1,149 @@
+:root{
+    --containerBgColor : transparent;
+    --containerWidth : 1100px;
+    --containerHeight : 260px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+body{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mainContainer .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--containerWidth);
+    min-height: var(--containerHeight);
+    border: rgb(255, 196, 1) solid 4px;
+    border-radius: 10px;
+    background-color:var(--containerBgColor);
+    box-shadow: 0 2px 5px black ;
+    margin: 20px;
+}
+
+.mainContainer .container .logoPart img{
+    width: 250px;
+    padding:0 10px;
+}
+
+.mainContainer .container .infoPart{
+    width:  300px;
+    margin:0 10px;
+}
+
+.mainContainer .container .infoPart .heading{
+   color: rgb(2, 131, 196);
+   font-size: 20px;
+   margin: 10px 0;
+}
+
+.container .infoPart .infoData{
+    text-transform: capitalize;
+}
+
+.mainContainer .container .infoPart .infoData tr td span{
+    font-weight: lighter;
+}
+
+.mainContainer .container .formPart{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    border-left: dashed 1px black;
+}
+
+.mainContainer .container .formPart .formHeading{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 7px;
+     margin-top: 20px;
+}
+
+.mainContainer .container .formPart form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mainContainer .container .formPart form input{
+    height: 35px;
+    border-radius: 7px;
+    padding-left:10px;
+    font-size: 15px;
+    border: rgb(218, 216, 216) solid 1.5px;
+    margin: 0 3px;
+}
+.mainContainer .container .formPart form input:focus{
+outline: none;
+border: rgb(255, 196, 1) solid 2px;
+}
+
+.mainContainer  .container .formPart form input::placeholder{
+    color: rgb(83, 83, 83);
+}
+
+
+.mainContainer .container .formPart form .nameInp , .phoneNumInp{
+    width: 193px;
+}
+
+.mainContainer .container .formPart form .addressInp{
+    width:90%;
+    margin: 10px;
+}
+
+.mainContainer .container .formPart form .sendBtn{
+    width:93%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 25px;
+    color:white;
+    font-weight: bold;
+    margin-bottom:40px;
+    border: none;
+    background-color: rgb(50, 159, 61);
+    transition: background-color 0.5s;
+}
+
+.mainContainer .container .formPart form .sendBtn:hover{
+   background-color: rgb(16, 76, 119);
+}
+
+.mainContainer .shorting{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+.mainContainer .shorting select{
+    width: 200px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .mainContainer .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainContainer .container .logoPart img{
+        width: 130px;
+    }
+    .mainContainer .container .formPart{
+        border: none;
+    }
+}
