@@ -147,3 +147,27 @@ border: rgb(255, 196, 1) solid 2px;
         border: none;
     }
 }
+
+@media screen and (max-width:600px){
+    .mainContainer .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .mainContainer .container .logoPart img{
+        width: 90px;
+    }
+    .mainContainer .container .formPart{
+        width: 350px;
+        border: none;             
+    }
+
+    .mainContainer .container .formPart .formHeading{
+     font-size: 18px;
+    }
+
+    .mainContainer .container .formPart  form .nameInp , .phoneNumInp{
+        width: 148px;
+    }
+    
+}
